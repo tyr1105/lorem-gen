@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中文占位文本生成器 - 假文/乱数假文/随机文字</title>
+  <meta name="description" content="免费中文占位文本生成器，支持假文、随机汉字、古诗词等多种模式，一键复制。" />
+  <meta name="keywords" content="中文占位文本,假文,乱数假文,lorem ipsum,随机文字" />
+  <meta name="author" content="tyr1105" />
+  <link rel="canonical" href="https://tyr1105.github.io/lorem-gen/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="中文占位文本生成器" />
+  <meta property="og:url" content="https://tyr1105.github.io/lorem-gen/" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"中文占位文本生成器","url":"https://tyr1105.github.io/lorem-gen/","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header"><div class="container header-inner">
+    <h1 class="logo">📝 中文占位文本</h1>
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+  </div></header>
+  <main class="container">
+    <p class="subtitle">快速生成中文假文，网页设计排版必备</p>
+    <section class="controls">
+      <div class="control-group"><label>模式</label>
+        <div class="mode-btns">
+          <button class="mode-btn active" data-mode="lorem">经典假文</button>
+          <button class="mode-btn" data-mode="random">随机汉字</button>
+          <button class="mode-btn" data-mode="poem">古诗词</button>
+          <button class="mode-btn" data-mode="tech">科技体</button>
+        </div>
+      </div>
+      <div class="control-row">
+        <div class="control-group"><label>类型</label>
+          <select id="type-select"><option value="paragraphs">段落数</option><option value="sentences">句子数</option><option value="characters">字数</option></select>
+        </div>
+        <div class="control-group"><label>数量</label>
+          <input type="number" id="amount-input" value="3" min="1" max="100" />
+        </div>
+      </div>
+      <button class="btn-gen" id="btn-gen">⚡ 生成文本</button>
+    </section>
+    <section class="output-section">
+      <div class="output-header">
+        <h2>生成结果</h2>
+        <div class="output-actions"><span id="char-count">0 字</span><button class="btn-copy" id="btn-copy">📋 复制</button></div>
+      </div>
+      <div class="output-box" id="output-box"><p class="placeholder">点击"生成文本"开始...</p></div>
+    </section>
+    <div class="ad-slot"><span class="ad-label">广告</span><div class="ad-ph">Ad Space</div></div>
+  </main>
+  <footer class="footer"><div class="container"><p>© 2026 中文占位文本 · <a href="https://github.com/tyr1105" target="_blank">tyr1105</a></p></div></footer>
+  <script src="app.js"></script>
+</body></html>
